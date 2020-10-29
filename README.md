@@ -1,3 +1,9 @@
+# Crack segmentation using React
+
+The first step to run the add is download the model [here](https://drive.google.com/file/d/1Avpujsj9DdBQHZzhZjv2P9wtba67A8ih/view?usp=sharing).
+
+Unzip the `unet_js_v1` directory in `public`.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
