@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import * as tf from "@tensorflow/tfjs";
 import { loadGraphModel } from "@tensorflow/tfjs-converter";
@@ -10,7 +9,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      image: "http://placehold.it/180",
+      image: "http://placehold.it/448",
     };
   }
 
@@ -103,6 +102,7 @@ class App extends React.Component {
     this.removeLastImage();
     this.setState({ image: URL.createObjectURL(event.target.files[0]) });
   };
+
   render() {
     const { image } = this.state;
     return (
@@ -125,7 +125,8 @@ class App extends React.Component {
             width="448"
             height="448"
             className="image"
-            src={this.state.image}
+						alt="crack_prediction"
+            src={image}
           />
         </div>
         <button onClick={this.predict}>Predict</button>
